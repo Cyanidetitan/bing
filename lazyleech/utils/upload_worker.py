@@ -162,6 +162,8 @@ async def _upload_file(client, message, reply, filename, filepath, force_documen
     try:
         ss = ''
         ps = ''
+        res = '[720p x265]'
+        mark = '@animxt'
         if newFile is not None:
             regcheck = re.match('.*{(.*)}$', newFile)
             if regcheck is not None:
@@ -178,7 +180,7 @@ async def _upload_file(client, message, reply, filename, filepath, force_documen
             nf = newFile.split('.')
             file_ext = nf.pop().strip()
             newFile = '.'.join(nf).strip()
-            newFileName = os.path.dirname(filepath)+'/'+ps+newFile+ss+' [720p x265] @animxt'+'.'+file_ext
+            newFileName = os.path.dirname(filepath)+'/'+ps+newFile+ss+res+mark+'.'+file_ext
             os.rename(filepath, newFileName)
             filepath = newFileName
         with tempfile.TemporaryDirectory(dir=str(user_id)) as tempdir:
