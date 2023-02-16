@@ -6,7 +6,7 @@ from pyrogram import Client
 
 API_ID = '8858279'
 API_HASH = 'ef28c3f458143cbcb4271a98a2e9d596'
-BOT_TOKEN = '5644936317:AAHxtN7d54Tj1KTaZvokxrbJ7Ne4oks5vjg'
+BOT_TOKEN = '5912998821:AAHDvkNGV7Gt-xdSHNjReoKL3Qtpu9hyQnU'
 TESTMODE = os.environ.get('TESTMODE')
 TESTMODE = TESTMODE and TESTMODE != '0'
 
